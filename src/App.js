@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import MyMapComponent from "./components/maps";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Sonar</header>
+      <MyMapComponent isMarkerShown />
     </div>
   );
 }
