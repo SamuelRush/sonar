@@ -18,7 +18,7 @@ const MyMapComponent = compose(
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyDAR8ubrq24oKLzNQathKEL02qJ_4gXqnI&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px` }} />,
+    containerElement: <div style={{ width: `100%`, height: `750px` }} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,
@@ -27,7 +27,7 @@ const MyMapComponent = compose(
   <GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
     {props.isMarkerShown && (
       <React.Fragment>
-        <Marker position={{ lat: 51.190, lng: -114.678 }} />
+        <Marker position={{ lat: 51.19, lng: -114.678 }} />
         <Marker position={{ lat: -10.397, lng: 150.644 }} />
         {/* var marker = new google.maps.Marker({position: { lat: -10.397, lng: 150.644 }, map: map}); */}
       </React.Fragment>
@@ -35,4 +35,4 @@ const MyMapComponent = compose(
   </GoogleMap>
 ));
 
-export default MyMapComponent
+export default MyMapComponent;
