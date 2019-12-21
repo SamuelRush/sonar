@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS destinations
+CASCADE;
+CREATE TABLE destinations
+(
+  id SERIAL PRIMARY KEY NOT NULL,
+  route_id INTEGER REFERENCES routes(id) ON DELETE CASCADE
+  address VARCHAR(255) NOT NULL,
+  latlong POINT NOT NULL
+);
